@@ -1,23 +1,10 @@
 {
   "semi": false,
-
   "singleQuote": true,
-
+  "printWidth": 60,
   "tabWidth": 2,
-
   "trailingComma": "none",
-
-  "printWidth": 100,
-
   "proseWrap": "preserve",
-
-  "overrides": [
-    {
-      "files": "*.md",
-
-      "options": {
-        "parser": "markdown"
-      }
-    }
-  ]
+  "embeddedLanguageFormatting": "auto",
+  "plugins": ["prettier-plugin-slidev"]
 }

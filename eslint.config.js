@@ -2,6 +2,7 @@ import js from '@eslint/js'
 import globals from 'globals'
 import pluginVue from 'eslint-plugin-vue'
 import markdown from '@eslint/markdown'
+import configPrettier from 'eslint-config-prettier'
 
 export default [
   {
@@ -33,7 +34,5 @@ export default [
     language: 'markdown/gfm'
   },
 
-  {
-    extends: ['some-config-standard', 'prettier']
-  }
+  configPrettier
 ]
