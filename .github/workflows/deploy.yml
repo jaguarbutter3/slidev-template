@@ -2,12 +2,19 @@ name: Deploy Slidev
 on:
   push:
     branches: [main]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v5
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
         with:
           node-version: 24
       - run: npm install
